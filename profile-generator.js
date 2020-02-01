@@ -2,7 +2,6 @@ module.exports = function ProfileGen(userInfo) {
 
     this.name = userInfo.name;
     this.gitHubURL = userInfo.html_url;
-    this.color = userInfo.color;
     this.img = userInfo.avatar_url;
     this.bio = userInfo.bio;
     this.blog = userInfo.blog;
@@ -13,28 +12,37 @@ module.exports = function ProfileGen(userInfo) {
     this.following = userInfo.following;
     this.stargazers_count = userInfo['stargazers_count'];
 
+
+    this.color = userInfo.color;
+
     this.colors = {
-        green: {
-            wrapperBackground: "#E6E1C3",
-            headerBackground: "#C1C72C",
-            headerColor: "black",
-            photoBorderColor: "#black"
+        red: {
+            wrapperBackground: "#de8f67",
+            headerBackground: "#550402",
+            headerColor: "white",
+            photoBorderColor: "white"
         },
         blue: {
-            wrapperBackground: "#5F64D3",
-            headerBackground: "#26175A",
+            wrapperBackground: "#ffda34",
+            headerBackground: "#1a44ff",
             headerColor: "white",
             photoBorderColor: "#73448C"
         },
         pink: {
-            wrapperBackground: "#879CDF",
-            headerBackground: "#FF8374",
+            wrapperBackground: "#879cdf",
+            headerBackground: "#ff6c5b",
             headerColor: "white",
             photoBorderColor: "#FEE24C"
         },
-        red: {
-            wrapperBackground: "#DE9967",
-            headerBackground: "#870603",
+        green: {
+            wrapperBackground: "#E6E1C3",
+            headerBackground: "#5c9d23",
+            headerColor: "black",
+            photoBorderColor: "#black"
+        },
+        orange: {
+            wrapperBackground: "#33bfff",
+            headerBackground: "#ff5000",
             headerColor: "white",
             photoBorderColor: "white"
         }
@@ -197,7 +205,7 @@ module.exports = function ProfileGen(userInfo) {
                 <ul class="links-nav">
                     <li class="nav-link"><a href="http://maps.google.com/?q=${this.location}"><i class="fas fa-location-arrow"></i> ${this.location}</a></li>
                     <li class="nav-link"><a href="${this.gitHubURL}"><i class="fab fa-github-alt"></i> GitHub</a></li>
-                    <li class=" nav-link"><a href="${this.blog}"><i class="fas fa-rss"></i> Blog</a></li>
+                    <li class=" nav-link"><a href="${this.blog}"><i class="fas fa-rss"></i> Profile</a></li>
                 </ul>
             </div>
         <main>

@@ -2,9 +2,10 @@ const fs = require('fs');
 const http = require('http');
 const inquirer = require('inquirer');
 const axios = require('axios');
-//const puppeteer = require('puppeteer');//
 const User = require('./userinput');
 const profileGen = require('./profile-generator');
+const puppeteer = require('puppeteer');
+
 
 
 function App() {
@@ -85,7 +86,7 @@ function App() {
         }
 
         await this.printPDF();
-        console.log("profile.pdf created!");
+        console.log("WOOHOO! Profile has been successfully created!");
         setTimeout((function() {
     		return process.exit(22);
 }), 3000);

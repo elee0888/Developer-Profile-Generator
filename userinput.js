@@ -17,15 +17,15 @@ module.exports = function User() {
                     },
                     {
                         type: "input",
-                        message: "What is your favorite color (green, blue, pink, red?) ",
+                        message: "What is your favorite color (red, blue, pink, green, orange?) ",
                         name: "color"
-                        //choices: ['green', 'blue', 'pink', 'red']
+                        //choices: ['red', 'blue', 'pink', 'green', 'orange']
                     }
                 ]);
 
         let userDetails = await axios.get(`https://api.github.com/users/${userInput.login}`);
 
-        // Get user's repos' star count
+        // Get user's repos' starcount
         let userRepos = await axios.get(`https://api.github.com/users/${userInput.login}/repos`);
 
         let totalStarCount = 0;
