@@ -9,3 +9,5 @@ Requires Node.js and the NPM to be installed.
 After cloning the repo locally, use your terminal to locate the repo's folder, then run the command: npm install from inside the folder.
 
 After NPM has been installed, run the command node app.js to run the application.
+
+Deployed: https://elee0888.github.io/Developer-Profile-Generator/
