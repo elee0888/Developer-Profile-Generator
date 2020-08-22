@@ -12,3 +12,4 @@ After NPM has been installed, run the command node index.js to run the applicati
 Deployed: https://elee0888.github.io/Developer-Profile-Generator/
 
 ![picture](img/developer-profile-generator.PNG)
+=======
